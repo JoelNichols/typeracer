@@ -2,7 +2,7 @@
 
 ##Setup
 * rake db:reset
-* rake get\_racer\_texts # this will seed the database with actual typeracer passages with their author and source, scraped from another website using Nokogiri.
+* rake get\_race\_texts # this will seed the database with actual typeracer passages with their author and source, scraped from another website using Nokogiri.
 * rake db:seed (Only do this if you want to see made up high scores from random people).
 
 ##Program basics:

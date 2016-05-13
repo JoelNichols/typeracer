@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+
+group :production do
+  gem 'mysql2'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -40,15 +43,13 @@ gem 'bcrypt', require: 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-gem 'debugger', group: [:development, :test]
-
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rspec-rails'
   gem 'annotate'
   gem 'pry-rails'
+  gem 'sqlite3'
 end
 
 #For whatever reason, thread-safe 0.3.0 wasn't working for heroku
